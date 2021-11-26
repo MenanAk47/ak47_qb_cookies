@@ -1,4 +1,9 @@
-QBCore = exports['qb-core']:GetCoreObject()
+Citizen.CreateThread(function()
+    while QBCore == nil do
+        TriggerEvent(Config.SharedObjectName, function(obj) QBCore = obj end)
+        Citizen.Wait(1000)
+    end
+end)
 
 function getSocietyMoney()
     return exports['qb-bossmenu']:GetAccount('cookies')

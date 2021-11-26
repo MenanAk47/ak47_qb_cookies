@@ -1,8 +1,7 @@
-QBCore = nil
 PlayerData = {}
 Citizen.CreateThread(function()
     while QBCore == nil do
-        QBCore = exports['qb-core']:GetCoreObject()
+        TriggerEvent(Config.SharedObjectName, function(obj) QBCore = obj end)
         Citizen.Wait(1000)
     end
     while QBCore.Functions == nil do

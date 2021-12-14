@@ -89,3 +89,21 @@ CREATE TABLE IF NOT EXISTS `ak47_cookies_shop_items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 DELETE FROM `ak47_cookies_shop_items`;
+INSERT INTO `ak47_cookies_shop_items` (`name`, `label`, `price`, `stock`) VALUES
+	('backwoods_grape', 'Backwoods Grape', '100', 100),
+	('backwoods_honey', 'Backwoods Honey', '100', 100),
+	('backwoods_russian_cream', 'Backwoods Russian Cream', '100', 100),
+	('blueberry_cruffin', 'Blueberry Cruffin', '100', 100),
+	('cake_mix', 'Cake Mix', '100', 100),
+	('cereal_milk', 'Cereal Milk', '100', 100),
+	('cheap_lighter', 'Cheap Lighter', '100', 100),
+	('cheetah_piss', 'Cheetah Piss', '100', 100),
+	('gary_payton', 'Gary Payton', '100', 100),
+	('gelatti', 'Gelatti', '100', 100),
+	('georgia_pie', 'Georgia Pie', '100', 100),
+	('grabba_leaf', 'Grabba Leaf', '100', 100),
+	('jefe', 'Jefe', '100', 100),
+	('lighter', 'Lighter', '100', 100),
+	('snow_man', 'Snow Man', '100', 100),
+	('whitecherry_gelato', 'Whitecherry Gelato', '100', 100),
+	('white_runtz', 'White Runtz', '100', 100);

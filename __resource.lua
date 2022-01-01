@@ -31,6 +31,7 @@ client_scripts {
 }
 
 server_scripts {
+    '@oxmysql/lib/MySQL.lua',
     'config.lua',
     'config-shop.lua',
     'config-farming.lua',

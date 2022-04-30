@@ -1,15 +1,15 @@
 QBCore = exports['qb-core']:GetCoreObject()
 
 function getSocietyMoney()
-    return exports['qb-bossmenu']:GetAccount('cookies')
+    return exports['qb-management']:GetAccount('cookies')
 end
 
 function addSocietyMoney(money)
-    TriggerEvent('qb-bossmenu:server:addAccountMoney', "cookies", money)
+	exports['qb-management']:AddMoney("cookies", money)
 end
 
 function removeSocietyMoney(money)
-	TriggerEvent('qb-bossmenu:server:removeAccountMoney', "cookies", money)
+	exports['qb-management']:RemoveMoney("cookies", money)
 end
 
 function CanCarryItem(id, item, amount)
